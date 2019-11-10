@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow:hidden;
+}
+
+#board {
+    width: 100%;
+    height: 100%;
+    transition: background-color 500ms ease-in-out;
+}
+
+.hexagon {
+    fill: lightgray;
+    stroke: black;
+    stroke-width: 0.005;
+    transition: fill 500ms ease-in-out, fill-opacity 200ms ease-in-out;
+}
+
+.hexagon.selectable {
+    cursor: pointer;
+}
+
+.hexagon.selectable:hover {
+    fill-opacity: 0.8;
+}
+
+.block {
+    stroke: black;
+    stroke-width: 0.001;
+    fill: darkseagreen;
+    fill-opacity: 0;
+    pointer-events: none;
+}
+
