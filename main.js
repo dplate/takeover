@@ -180,7 +180,7 @@ const createGame = (fields) => {
 };
 
 const init = async () => {
-  const fields = createFields(10, 10, 5);
+  const fields = createFields(9, 9, 5);
   assignNeighbours(fields);
   const game = createGame(fields);
   assignActions(game);
